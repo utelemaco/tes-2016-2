@@ -1,6 +1,6 @@
 {
   "name": "Tes-2016-2",
   "tagline": "Projeto para a disciplina TES 2016 2",
-  "body": "# Processos JHipster\r\n(JHipster) [https://jhipster.github.io] é uma ferramenta pra desenvolvimento de aplicações web. A plataforma implementa um gerador de código (Yeoman) [http://yeoman.io/] pra criar aplicações baseadas na arquitetura (Spring Boot)[http://projects.spring.io/spring-boot/] + (Angular) [https://angularjs.org/].",
+  "body": "# Processos JHipster\r\n[JHipster](https://jhipster.github.io/) é uma ferramenta pra desenvolvimento de aplicações web. A plataforma implementa um gerador de código [Yeoman](http://yeoman.io/) pra criar aplicações baseadas na arquitetura [Spring Boot](http://projects.spring.io/spring-boot/) + [AngularJS](https://angularjs.org/).",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
