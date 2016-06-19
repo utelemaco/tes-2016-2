@@ -1,6 +1,0 @@
-{
-  "name": "Tes-2016-2",
-  "tagline": "Projeto para a disciplina TES 2016 2",
-  "body": "# Processos JHipster\r\n+ Configurando o ambiente\r\n+ Criando uma aplicação\r\n+ Criando um CRUD simples\r\n+ Criando um CRUD complexo\r\n+ Criando um serviço",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
