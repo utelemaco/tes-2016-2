@@ -72,19 +72,21 @@
 </li>
 </ol>
 
-<p><img src="http://yuml.me/00ceb0b1" alt="BPMN"></p>
+<p><img src="http://yuml.me/00ceb0b1" alt="BPMN Processo 1"></p>
 
 <h2>
-<a id="criando-uma-aplicação" class="anchor" href="#criando-uma-aplica%C3%A7%C3%A3o" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Criando uma aplicação</h2>
+<a id="criando-uma-aplicação-ou-alterando-as-propriedades-de-uma-aplicação" class="anchor" href="#criando-uma-aplica%C3%A7%C3%A3o-ou-alterando-as-propriedades-de-uma-aplica%C3%A7%C3%A3o" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Criando uma aplicação (ou alterando as propriedades de uma aplicação)</h2>
 
-<p>Esse processo descreve a criação de nova aplicação. Normalmente é executado no início do processo de desenvolvimento e envolve definir a arquitetura da aplicação.</p>
-
-<p>Sequência do processo:</p>
+<p>Esse processo é usado para criar uma nova aplicação ou alterar algumas propriedades da aplicação. Normalmente é executado no início do processo de desenvolvimento e envolve definir a arquitetura da aplicação. Para realizar esse processo é necessário realizar as seguintes atividades:</p>
 
 <ol>
-<li>Criar o diretório da aplicação <code>mkdir myApp &amp;&amp; cd myApp</code>
+<li>Se for uma nova aplicação, criar o diretório da aplicação <code>mkdir myApp &amp;&amp; cd myApp</code> </li>
+<li>Iniciar o gerador <code>yo jhipster</code>. O gerador irá fazer 15 perguntas (listadas abaixo):</li>
+<li>Forneça valores apropriados para as 15 perguntas (quando se aplicar, usar o valor default sugerido pelo gerador)</li>
+<li>Executar o comando <code>mvn spring-boot:run</code>
 </li>
-<li>Iniciar o gerador <code>yo jhipster</code>. O gerador irá fazer as seguintes perguntas:</li>
+<li>Executar o comando <code>gulp</code>
+</li>
 </ol>
 
 <blockquote>
@@ -106,6 +108,8 @@
 <li><em>Which testing frameworks would you like to use?</em></li>
 </ul>
 </blockquote>
+
+<p><img src="http://yuml.me/eabd15ea" alt="BPMN Processo 2"></p>
       </section>
       <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
