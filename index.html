@@ -1,36 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Tes-2016-2 by utelemaco</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Tes-2016-2</h1>
-        <p class="header">Projeto para a disciplina TES 2016 2</p>
+    <section class="page-header">
+      <h1 class="project-name">Tes-2016-2</h1>
+      <h2 class="project-tagline">Projeto para a disciplina TES 2016 2</h2>
+      <a href="https://github.com/utelemaco/tes-2016-2" class="btn">View on GitHub</a>
+      <a href="https://github.com/utelemaco/tes-2016-2/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/utelemaco/tes-2016-2/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/utelemaco/tes-2016-2/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/utelemaco/tes-2016-2/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/utelemaco/tes-2016-2">View On GitHub</a></li>
-        </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/utelemaco">utelemaco</a></p>
-
-
-      </header>
-      <section>
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="processos-jhipster" class="anchor" href="#processos-jhipster" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Processos JHipster</h1>
 
 <p><a href="https://jhipster.github.io/">JHipster</a> é uma ferramenta pra desenvolvimento de aplicações web. A plataforma implementa um gerador de código <a href="http://yeoman.io/">Yeoman</a> pra criar aplicações baseadas na arquitetura <a href="http://projects.spring.io/spring-boot/">Spring Boot</a> + <a href="https://angularjs.org/">AngularJS</a>.</p>
@@ -44,7 +33,7 @@
 <li>Criando uma aplicação</li>
 <li>Criando um CRUD simples</li>
 <li>Criando um CRUD complexo</li>
-<li>Criando um serviço</li>
+<li>Alterando um CRUD</li>
 </ul>
 
 <h2>
@@ -89,33 +78,78 @@
 </li>
 </ol>
 
-<blockquote>
-<ul>
-<li><em>Which type of application would you like to create?</em></li>
-<li><em>What is the base name of your application?</em></li>
-<li><em>What is your default Java package name?</em></li>
-<li><em>Which type of authentication would you like to use?</em></li>
-<li><em>Which type of database would you like to use?</em></li>
-<li><em>Which production database would you like to use?</em></li>
-<li><em>Which development database would you like to use?</em></li>
-<li><em>Do you want to use Hibernate 2nd level cache?</em></li>
-<li><em>Do you want to use a search engine in your application?</em></li>
-<li><em>Do you want to use clustered HTTP sessions?</em></li>
-<li><em>Do you want to use WebSockets?</em></li>
-<li><em>Would you like to use Maven or Gradle?</em></li>
-<li><em>Would you like to use the LibSass stylesheet preprocessor for your CSS?</em></li>
-<li><em>Would you like to enable translation support with Angular Translate?</em></li>
-<li><em>Which testing frameworks would you like to use?</em></li>
-</ul>
-</blockquote>
+ 
 
 <p><img src="http://yuml.me/eabd15ea" alt="BPMN Processo 2"></p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+
+<h2>
+<a id="criando-um-crud-simples" class="anchor" href="#criando-um-crud-simples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Criando um CRUD simples</h2>
+
+<p>Esse processo é usado para criar um CRUD simples. Um CRUD é considerado simples quando o seu desenvolvimento pode ser feito a partir do próprio gerador <code>yo</code> (sem uso de uma modelagem de entidades). Normalmente os CRUDs dessa categoria são de Entidades com poucos atributos e associações. Para realizar esse processo é necessário realizar as seguintes atividades:</p>
+
+<ol>
+<li>Sincronize o repositório de código local (faça o update e comite qualquer alteração)</li>
+<li>Execute o comando <code>yo jhipster:entity &lt;NOME_ENTIDADE&gt; --[options]</code>
+</li>
+<li>Para cada atributo, forneça as seguintes informações: nome, tipo e regras para validação.</li>
+<li>Para cada associação, forneça as seguintes informações: entidade associada, nome e tipo da associação.</li>
+<li>O gerador irá fazer mais três perguntas , forneça a resposta default sugerida pelo gerador para as três.</li>
+<li>Resolva os conflitos se existirem (indicando se deseja sobrescrever ou manter o código atual)</li>
+<li>Reverta algumas alterações feitas pelo gerador (aquelas que sobrescrevem as alterações feitas pelo programador)</li>
+<li>Implemente as customizações necessárias (tradução de mensagens, regras de negócio, código de teste, etc)</li>
+<li>Faça o update do código e resolva os conflitos se existirem</li>
+<li>Valide os testes com o código integrado</li>
+<li>Comite as alterações</li>
+</ol>
+
+<h2>
+<a id="criando-um-crud-complexo" class="anchor" href="#criando-um-crud-complexo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Criando um CRUD complexo</h2>
+
+<p>Esse processo é usado para criar um CRUD complexo. Um CRUD é considerado complexo quando o seu desenvolvimento requer o uso de uma ferramenta de modelagem. Normalmente os CRUDs dessa categoria são de Entidades com vários atributos e associações. Para realizar esse processo é necessário realizar as seguintes atividades:</p>
+
+<ol>
+<li>Desenhe o modelo no <a href="https://jhipster.github.io/jdl-studio/">JDL Studio</a>
+</li>
+<li>Faça o download do arquivo no diretório <code>.jhipster</code>
+</li>
+<li>Sincronize o repositório de código local (faça o update e comite qualquer alteração)</li>
+<li>Execute o comando <code>yo jhipster:import-jdl .jhipster/&lt;NOMEDOARQUIVO&gt;</code>
+</li>
+<li>Resolva os conflitos se existirem (indicando se deseja sobrescrever ou manter o código atual)</li>
+<li>Reverta algumas alterações feitas pelo gerador (aquelas que sobrescrevem as alterações feitas pelo programador)</li>
+<li>Implemente as customizações necessárias (tradução de mensagens, regras de negócio, código de teste, etc)</li>
+<li>Faça o update do código e resolva os conflitos se existirem</li>
+<li>Valide os testes com o código integrado</li>
+<li>Comite as alterações</li>
+</ol>
+
+<h2>
+<a id="alterando-um-crud" class="anchor" href="#alterando-um-crud" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alterando um CRUD</h2>
+
+<p>Esse processo é usado para alterar um CRUD (simples ou complexo). Para realizar esse processo é necessário realizar as seguintes atividades:</p>
+
+<ol>
+<li>Altere o arquivo <code>.jhipster/&lt;NOME_ENTIDADE&gt;.json</code>
+</li>
+<li>Sincronize o repositório de código local (faça o update e comite qualquer alteração)</li>
+<li>Execute o comando <code>yo jhipster:entity &lt;NOME_ENTIDADE&gt; --regenerate</code>
+</li>
+<li>Resolva os conflitos se existirem (indicando se deseja sobrescrever ou manter o código atual)</li>
+<li>Reverta algumas alterações feitas pelo gerador (aquelas que sobrescrevem as alterações feitas pelo programador)</li>
+<li>Implemente as customizações necessárias (tradução de mensagens, regras de negócio, código de teste, etc)</li>
+<li>Faça o update do código e resolva os conflitos se existirem</li>
+<li>Valide os testes com o código integrado</li>
+<li>Comite as alterações</li>
+</ol>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/utelemaco/tes-2016-2">Tes-2016-2</a> is maintained by <a href="https://github.com/utelemaco">utelemaco</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+
+    </section>
+
+  
   </body>
 </html>
