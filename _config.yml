@@ -1,0 +1,8 @@
+title: Tes-2016-2
+description: Projeto para a disciplina TES 2016 2
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
